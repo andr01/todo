@@ -66,6 +66,7 @@ function onPageLoaded() {
 
 
     saveButton.addEventListener("click", () => {
+        createTodo()
         localStorage.setItem("todos", ul.innerHTML);
     });
     clearButton.addEventListener("click", () => {
