@@ -11,6 +11,7 @@ function onPageLoaded() {
 
 
 
+
     function createTodo() {                      // создаем новую запись
         const li = document.createElement("li");      // создаем список
         const textSpan = document.createElement("span");  // создаем контейнер span

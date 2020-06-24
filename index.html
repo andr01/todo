@@ -11,16 +11,17 @@
         <! импорт градиента из fontawesome>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
             <! импорт шрифта из googleapis <link rel="shortcut icon" href="assets/favicon.ico">
-                <! картинка>
+                <! картинка, которой нет>
                     <link rel="icon" type="image/gif" href="assets/animated_favicon.gif">
-                    <! гифка>
+                    <! гифка, которой нет>
 </head>
 
 <body>
     <div id="todo">
         <! id устанавливает уникальный ид-тор для связывания со стилизацией или скриптингом>
             <div class="todo__container">
-                <h1>Мои списки дел <i id="pencil" class="fas fa-pencil-alt"></i></h1>
+                <h1 contenteditable="true">Мои списки дел <i id="pencil" class="fas fa-pencil-alt"></i></h1>
+                <! добавил возможность редактирования заголовка через contenteditable >
 
                 <input type="text" placeholder="Добавить список">
 
