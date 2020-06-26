@@ -8,6 +8,8 @@ function onPageLoaded() {
     const showTipsButton = document.querySelector("button.showTips");
     const closeTipsButton = document.querySelector("a.closeTips");
     const overlay = document.querySelector("#overlay");
+    const pencil = document.querySelector("#pencil");
+    const todoName = document.querySelector("#todoName")
 
 
 
@@ -64,6 +66,11 @@ function onPageLoaded() {
     });
 
     ul.addEventListener("click", onClickTodo);
+
+
+    pencil.addEventListener('click', function () {    // по клику на карандаш можно редактировать заголовок
+        todoName.contentEditable = true;
+    });
 
 
     saveButton.addEventListener("click", () => {
